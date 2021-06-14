@@ -1,0 +1,145 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+
+html{
+    background: linear-gradient(45deg,
+      #a19d9c, #d8b9c5, #cfecfa);
+        background-size: 500% 500%;
+        animation: gradient 8s ease infinite;
+        scroll-behavior: smooth;
+    }
+@keyframes gradient{
+    0%{
+        background-position:  0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%; 
+    }
+}
+/*...................hide scrollbar */
+body::-webkit-scrollbar{
+    display: none;
+}
+body{
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+}
+/* ................................ */
+
+/* navagation .........................*/
+nav {
+    width: 100vw;
+    color: rgba(52, 51, 61, 0.8);
+    
+   
+}
+
+#nav-logo{
+    width: 17em;
+    height: 7em;
+}
+
+.pages{
+    padding-bottom: 1em;
+    padding-top: 1em;
+    text-decoration: none;
+    font-family: 'Odibee Sans', cursive;
+    font-size: 1.7em;
+    text-align: right;
+    float: right;
+    padding-left: 0.5em;
+    padding-right: 0.5em; 
+    color: rgba(52, 51, 61, 0.8);
+    border-radius: 2px;
+}
+
+.pages:hover{
+    border-bottom: 0.1px solid black;
+    background-color: rgba(201, 201, 204, 0.8);
+    color: aliceblue;
+}
+
+/* BANNER PICTURE AND QUOTE.................*/
+#bannerCon{
+    background-image: url("Images/waveySand.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border: 2px solid rgba(165, 159, 235, 0.3);
+    border-radius: 2px;
+    margin-top: 10em;
+    height: 15em;
+    padding: 3em;
+}
+
+#bannerCon > p{
+ color: aliceblue;
+ padding:0.7em;
+ font-size: 2em;
+ font-family: 'Baloo Tammudu 2', cursive;
+ background-color: rgba(22,22,22,0.4);
+ border-radius: 5px;
+ border-style:unset;
+ line-height: 100%;
+}
+
+cite{
+    float: right;
+}
+
+/*.......ARROW................*/
+
+#arrow{
+    width: 5em;
+    height: 5em;
+    border-left: 5px solid black;
+    border-bottom: 5px solid black;
+    border-radius: 15px;
+    margin: 0 auto;
+    margin-top: 3em;
+    transform: rotate(-45deg);
+}
+
+#arrow:hover{
+    box-shadow: -10px 10px 12px 2px white ;
+}
+
+#page1{
+    height: 100vh;
+}
+/* ...................page 2............ */
+
+
+#page2{
+    height: 100vh;
+}
+
+
+#pageContainer{
+    border: 2px solid black;
+    width: 80vw;
+    margin: auto;
+    margin-top: 50vh; /* middle of screen after button is pushed */ 
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.filter{
+    border:1px solid;
+    display: flex;
+    width:100%;
+    height: 100%;
+    margin: 0px;
+}
+/* Set THE ANCHOR TO FILL ITS DIV */
+.filter > a{
+    height: 100%;
+    width:100%;
+    right:50%;
+}
+
